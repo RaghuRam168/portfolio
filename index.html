@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Noto+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+  
+        <!--.................... navbar...................... -->
+        <nav class="navbar navbar-expand-lg sticky-top navigation">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact US</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+        <!-- <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid navigation">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact US</a>
+                  </li>
+              </div>
+            </div>
+          </nav> -->
+        <section id="home">
+  
+          <!-- .............home................... -->
+          <div id="home">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Raghu Ram</h1>
+                        <p>Sphomore || Web Developper || Android Enthusiast</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/home2.svg" alt="character">
+                    </div>
+                </div>
+            
+          </div>
+        </section>
+
+
+    <section id="about">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="images/raghu.jpg" alt="raghu">
+            </div>
+            <div class="col-lg-8">
+               <div class="about_discription"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rem iste amet unde minima dolores fugit, dolor quis accusantium consequatur molestias fugiat suscipit velit ab voluptates excepturi, asperiores, laboriosam iusto!</p></div>
+            </div>
+        </div>
+        <ul class="quick_links">
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+        </ul>
+    </section>
+    <hr>
+
+<section id="skills">
+    <h1>Skills</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" id="img-1" onmouseover="changeImg('xxx','images/html-color-5.svg');hoin('xx','30%')" onmouseout="replaceImg('xxx','images/html-5.svg');hoout('xx')">
+                <h3>HTML</h3>
+                <img id="xxx" src="images/html-5.svg" alt="html">
+                <div id="xx"></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-2','images/css-3-color.svg')" onmouseout="replaceImg('img-2','images/css-3.svg')">
+                <h3>CSS</h3>
+                <img id="img-2" src="images/css-3.svg" alt="html">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card"  onmouseover="changeImg('img-3','images/atom-color.svg')" onmouseout="replaceImg('img-3','images/atom.svg')">
+            <h3>React Js</h3>
+            <img id="img-3" src="images/atom.svg" alt="html">
+           
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-4','images/java-script-color.svg')" onmouseout="replaceImg('img-4','images/java-script.svg')">
+                <h3>JS</h3>
+                <img id="img-4" src="images/java-script.svg" alt="html">
+                
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-5','images/java-color.svg')" onmouseout="replaceImg('img-5','images/java.svg')">
+                <h3>Java</h3>
+                <img id="img-5" src="images/java.svg" alt="html">
+               
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-6','images/c-color.svg')" onmouseout="replaceImg('img-6','images/c.svg')">
+            <h3>C-lang</h3>
+            <img id="img-6" src="images/c.svg" alt="html">
+          
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-7','images/c++-color.svg')" onmouseout="replaceImg('img-7','images/c++.svg')">
+            <h3>C++</h3>
+            <img id="img-7" src="images/c++.svg" alt="html">
+           
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="skill_card" onmouseover="changeImg('img-8','images/algorithm-color.svg')" onmouseout="replaceImg('img-8','images/algorithm.svg')">
+            <h3>DSA</h3>
+            <img id="img-8" src="images/algorithm.svg" alt="html">
+           
+        </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h1>Projects</h1>
+</section>
+
+
+<section id="testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          <div class="test">
+              <h1>raghu</h1>
+              <p>X X X X X</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="test">
+                <h1>raghuram</h1>
+                <p>X X X X X</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>  
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="test">
+                <h1>raghuramtkr</h1>
+                <p>X X X X X</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>  
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+</section>
+<!-- <h1 id="x" onmouseover="hoin('x')" onmouseout="hoout('x')">raghhu</h1> -->
+
+<section id="contact">
+    <footer>
+        <div class="row">
+            <div class="col-lg-4 contact-details">
+                <ul>
+                    <li>Email : raghuramdhigajarla@gmail.com</li>
+                    <li>hdsghcxdhcmdjch</li>
+                    <li>sbcmjhbcmsjdvjsd,j</li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <button class="btn">Give a review</button>
+                <button class="btn">Contact Me</button>
+                <button class="btn"><i class="fa fa-github" aria-hidden="true"></i> Git Hub</button>
+                <button class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i> Linked In</button>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
