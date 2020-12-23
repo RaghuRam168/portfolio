@@ -14,9 +14,9 @@
 <body>
   
         <!--.................... navbar...................... -->
-        <nav class="navbar navbar-expand-lg sticky-top navigation">
+        <nav class="navbar navbar-expand-lg navbar-da sticky-top navigation">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -69,41 +69,40 @@
               </div>
             </div>
           </nav> -->
-        <section id="home">
-  
+
+          
           <!-- .............home................... -->
-          <div id="home">
-                <div class="row">
-                    <div class="col-lg-6">
+        <section id="home">
+                <div class="row home_description">
+                    <div class="col-lg-8">
                         <h1>Raghu Ram</h1>
-                        <p>Sphomore || Web Developper || Android Enthusiast</p>
+                        <p>sophomore || Web Developer || Android Enthusiast</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <img src="images/home2.svg" alt="character">
                     </div>
                 </div>
-            
-          </div>
         </section>
 
 
     <section id="about">
+      <h1>About Me</h1>
         <div class="row">
             <div class="col-lg-4">
                 <img src="images/raghu.jpg" alt="raghu">
             </div>
             <div class="col-lg-8">
-               <div class="about_discription"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rem iste amet unde minima dolores fugit, dolor quis accusantium consequatur molestias fugiat suscipit velit ab voluptates excepturi, asperiores, laboriosam iusto!</p></div>
+               <div class="about_discription"><p>I am a Sophomore Computer Science Undergraduate also an experienced developer skilled in web development. I enjoy contributing to opensource and problem-solving. I am looking to apply my skills and abilities to a challenging, growth-oriented position while continuing to build my academic foundation</p></div>
             </div>
         </div>
-        <ul class="quick_links">
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li><i class="fa fa-github" aria-hidden="true"></i></li>
-            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+        <ul class="links">
+          <li><button href="#"><i class="fa fa-facebook" aria-hidden="true"></i></button></li>
+          <li><button href="#"><i class="fa fa-github" aria-hidden="true"></i></button></li>
+          <li><button href="#"><i class="fa fa-instagram" aria-hidden="true"></i></button></li>
+          <li><button href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></button></li>
         </ul>
     </section>
-    <hr>
+    <!-- <hr> -->
 
 <section id="skills">
     <h1>Skills</h1>
@@ -121,21 +120,21 @@
                 <img id="img-2" src="images/css-3.svg" alt="html">
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6">
             <div class="skill_card"  onmouseover="changeImg('img-3','images/atom-color.svg')" onmouseout="replaceImg('img-3','images/atom.svg')">
             <h3>React Js</h3>
             <img id="img-3" src="images/atom.svg" alt="html">
            
         </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6">
             <div class="skill_card" onmouseover="changeImg('img-4','images/java-script-color.svg')" onmouseout="replaceImg('img-4','images/java-script.svg')">
                 <h3>JS</h3>
                 <img id="img-4" src="images/java-script.svg" alt="html">
                 
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6">
             <div class="skill_card" onmouseover="changeImg('img-5','images/java-color.svg')" onmouseout="replaceImg('img-5','images/java.svg')">
                 <h3>Java</h3>
                 <img id="img-5" src="images/java.svg" alt="html">
@@ -173,7 +172,7 @@
 
 <section id="testimonials">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner inner">
           <div class="carousel-item active">
           <div class="test">
               <h1>raghu</h1>
@@ -214,8 +213,8 @@
             <div class="col-lg-4 contact-details">
                 <ul>
                     <li>Email : raghuramdhigajarla@gmail.com</li>
-                    <li>hdsghcxdhcmdjch</li>
-                    <li>sbcmjhbcmsjdvjsd,j</li>
+                    <li>India , Hyderabad</li>
+                    <li>Student at TKR CET</li>
                 </ul>
             </div>
             <div class="col-lg-8">
@@ -227,6 +226,13 @@
         </div>
     </footer>
 </section>
+<!-- 
+<ul class="links">
+  <li><button href="#"><i class="fa fa-facebook" aria-hidden="true"></i></button></li>
+  <li><button href="#"><i class="fa fa-github" aria-hidden="true"></i></button></li>
+  <li><button href="#"><i class="fa fa-instagram" aria-hidden="true"></i></button></li>
+  <li><button href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></button></li>
+</ul> -->
 
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

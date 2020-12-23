@@ -7,30 +7,38 @@ li{
     list-style: none;
 }
 
+
 .navigation{
     background-color: #000;
     padding: 10px;
 }
-
+ 
 .navigation .nav-item a{
     color: #ffffff;
     font-size: 1.2rem;
     margin: 0 20px;
 }
 
-.navigation .nav-item a:hover{
-    color: #fdb827;
-}
-.tab{
-    background-color: #00adb5;
+
+
+.navigation .nav-item a:hover
+{
     color: #fdb827;
 }
 
+/* ..................home ......................*/
+
 #home{
-    padding: 5% 8%;
+    height: 100vh;
+    padding: 5% 8% 0%;
     background-color:#fff;
     font-family: 'Inria Serif', serif;
-    height: 100vh;
+    box-sizing: border-box;
+}
+
+.home_description{
+    margin: 5% 10%;
+
 }
 
 #home h1{
@@ -44,16 +52,15 @@ li{
     color: #00adb5;
     font-size: 1.3rem;
 }
-
-
 #home img{
     height: 40%;
     object-fit: cover;
 } 
+/* ...........................about .......................*/
+
 #about{
-    font-family: 'Inria Serif', serif;
     box-sizing: border-box;
-    padding:5% 10%;
+    padding:2% 10% 5%;
     background-color:#545454;
     background-color: #393e46;
     background-color: #eeeeee;
@@ -61,6 +68,12 @@ li{
     position:relative;
 }
 
+#about h1{
+    color: #000;
+    margin: 3% 0%;
+    font-family: 'Inria Serif', serif;
+    font-size: 3rem;
+}
 
 #about img{
     height: 150px;
@@ -73,11 +86,12 @@ li{
     font-family: 'Noto Sans', sans-serif;
     margin: 5% auto;
     max-width: 80%;
-    color: #ffd369;
+    color: #ebdab2;
+    /* color: #fff; */
     color: #393e46;
     padding: 5px auto;
     letter-spacing: 1.5px;
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: left;
 }
 
@@ -89,25 +103,32 @@ hr{
     border: 1px solid #000;
     border-radius: 2px;
 }
-.quick_links{
+
+.links{
     margin-left:5px;
     position: absolute;
     bottom: 10%;
     right: 0%;
 }
 
-#about li:hover{
-    color: #545454;
-    background-color:#fff;
-}
-#about li{
-    color: #fff;
-    border: 1px solid #a6a6a6;
-    border-radius: 4px;
-    width: 40px;
-    padding: 4%;
+.links li{
     margin: 10px;
 }
+
+.links button{
+    /* color: #fdb827;
+    background-color: #393e46; */
+    padding:10px;
+    border-radius: 4px;
+    /* border: 1px solid #545454; */
+}
+.links button:hover{
+    transform: scale(1.2);
+    color: #393e46;
+    background-color:#fdb827;
+}
+
+/* ...............skills ..............................*/
 
 #skills{
     box-sizing: border-box;
@@ -116,15 +137,14 @@ hr{
     background-color: #fdb827;
 }
 
-.fa{
-    color:#00adb5;
-}
-/* h1{
-    margin: 10px auto;
-    color: #00adb5;
-    font-size: 2.5rem;
+#skills h1{
+    text-align: center;
+    margin-bottom: 3%;
     font-family: 'Inria Serif', serif;
-} */
+    font-size: 3rem;
+}
+
+
 #skills img{
     height: 40%;
     width: 40%;
@@ -134,7 +154,9 @@ hr{
     margin: 20px;
     padding: 20px 10px;
     color: #a6a6a6;
-    color: #393e46;;
+    color: #ebdab2;
+    color: #393e46;
+    font-family: 'Noto Sans', sans-serif;
     text-align: center;
 }
 .skill_bar{
@@ -149,12 +171,12 @@ hr{
     object-fit: cover;
     color:#00adb5;
     color: #222831;
-    /* background-color:  #ffd369;
+   /*  background-color:  #ffd369;
     border: 1px solid #f1f1f1; */
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
-
+/* ..............projects .............................*/
 
 #projects{
     height: 100vh;
@@ -163,16 +185,27 @@ hr{
 }
 
 
+
+/* .................testimaonials .......................*/
+
 #testimonials{
-    padding: 5% 10%;
+    /* padding: 5% 10%; */
     background-color: #393e46;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.inner{
+    width: 70%;
+    margin: 5% auto;
 }
 .test{
     text-align: center;
-    padding: 5% 10%;
+    padding: 4% 10%;
     border-radius: 8px;
     background-color: #fdb827;
 }
+
+
 
 
 /* ..................contact us ...........................*/
@@ -187,28 +220,32 @@ hr{
     font-size: 1.2rem;
 }
 .btn{
-    max-width: 200px;
+    color: #fdb827;
     margin: 5px;
-    padding: 10px 20px;
-    background-color: #eeeeee;
-    color: #03506f;
-    font-size: 1rem;
+    background-color: #393e46;
+    padding: 4%;
+    border: 1px solid #545454;
+}
+.btn:hover{
+    transform: scale(1.05);
+    color: #393e46;
+    background-color:#fdb827;
 }
 
 
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: rgb(180, 230, 173);
-    }
-
-
+  
 #home img{
     margin-top: 20px;
     padding: 20px auto;
     text-align: center;
-    height: 30%;
+    height: 20%;
     object-fit: cover;
+}
+
+.btn{
+    padding: 10px;
 }
 
 
