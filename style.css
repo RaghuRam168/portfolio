@@ -179,7 +179,7 @@ hr{
 /* ..............projects .............................*/
 
 #projects{
-    height: 100vh;
+    height: 50vh;
     transition-delay: 100ms;
     background-color: #eeeeee;
 }
