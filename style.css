@@ -25,7 +25,6 @@ li{
 .navigation .nav-item a:hover
 {
     color: #fdb827;
-    text-decoration: underline;
 }
 
 /* ..................home ......................*/
@@ -47,6 +46,7 @@ li{
     font-family: 'Inria Serif', serif;
     /* font-family: 'Montserrat', sans-serif; */
     color: #14274e;
+    color: #00587a;
     font-size: 5rem;
 }
 
@@ -126,11 +126,16 @@ hr{
 
 .links li{
     margin: 10px;
+
 }
 
 .links button{
     padding:10px;
     border-radius: 4px;
+    background-color: #fff;
+    border: #9ba4b4 solid 1px;
+    /* border-left: none;
+    border-right: none; */
 }
 
 .links button:hover{
@@ -146,7 +151,8 @@ hr{
 }
 .insta:hover{
     color: #fff;
-    background-color: rgb(252, 55, 120);
+    background-image: linear-gradient(to bottom right,#9d0191,#c62a88, rgb(252, 55, 120),#c70039,#9d0191);
+    /* background-color: rgb(252, 55, 120); */
 }
 .in:hover{
     color: #fff;
@@ -237,6 +243,8 @@ hr{
     /* padding: 5% 10%; */
     background-color: #393e46;
     background-color: #214252;
+    background-color: #14274e;
+    background-image: linear-gradient(to bottom right,#214252,#14274e,#f05454,#fdb827,#fff,#f05454,#214252,#14274e);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -270,18 +278,20 @@ hr{
 .btn{
     color: #fdb827;
     color: #fff;
+    color: #214252;
     margin: 5px;
-    background-color: #393e46;
-    background-color: #214252 ;
+    /* background-color: #393e46; */
+   background-color: #fff;
+    /* background-image: linear-gradient(to bottom right,#214252,#393e46,#30475e); */
     padding: 4%;
     border: 1px solid #545454;
 }
 .btn:hover{
     transform: scale(1.05);
     color: #393e46;
-    color: #214252;
+    color: #fff;
     background-color:#fdb827;
-    background-color: #fff;
+    background-color: #214252;
 }
 
 
