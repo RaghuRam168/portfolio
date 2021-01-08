@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Noto+Sans&display=swap" rel="stylesheet">
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
@@ -16,7 +19,8 @@
         <!--.................... navbar...................... -->
         <nav class="navbar navbar-expand-lg navbar-da sticky-top navigation">
             <div class="container-fluid">
-              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+               <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <div class="brand-name">portfolio</div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,48 +35,20 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                       </li>
-                      <li class="nav-item">
+                      <!-- <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
-                      </li>
+                      </li> -->
                       <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact US</a>
+                        <a class="nav-link" href="#contact">Contact Me</a>
                       </li>
                 </ul>
               </div>
             </div>
           </nav>
 
-
-        <!-- <nav class="navbar fixed-top navbar-expand-lg">
-            <div class="container-fluid navigation">
-              <a class="navbar-brand" href="#">Portfolio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact US</a>
-                  </li>
-              </div>
-            </div>
-          </nav> -->
-
-          
           <!-- .............home................... -->
-        <section id="home">
+     
+          <section id="home">
                 <div class="row home_description">
                     <div class="col-lg-8">
                         <h1>Raghu Ram</h1>
@@ -84,6 +60,7 @@
                 </div>
         </section>
 
+        <hr>
 
     <section id="about">
       <h1>About Me</h1>
@@ -92,52 +69,59 @@
                 <img src="images/raghu.jpg" alt="raghu">
             </div>
             <div class="col-lg-8">
-               <div class="about_discription"><p>I am a Sophomore Computer Science Undergraduate also an experienced developer skilled in web development. I enjoy contributing to opensource and problem-solving. I am looking to apply my skills and abilities to a challenging, growth-oriented position while continuing to build my academic foundation</p></div>
+                <ul class="links">
+                    <li><a href="https://github.com/RaghuRam168"><button class="face"><i class="fa fa-facebook" aria-hidden="true"></i></button></a></li>
+                    <li><a href="https://github.com/RaghuRam168"><button class="git" href="#"><i class="fa fa-github" aria-hidden="true"></i></button></a></li>
+                    <li><a href="https://www.instagram.com/drrtech_21/"><button class="insta" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></button></a></li>
+                    <li><a href="https://www.linkedin.com/in/raghu-ram-dhigajarla-4529081a3/"><button class="in" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></button></a></li>
+                  </ul>
+                <div class="about_discription"><p>I am a Sophomore Computer Science Undergraduate also an experienced developer skilled in web development. I enjoy contributing to opensource and problem-solving. I am looking to apply my skills and abilities to a challenging, growth-oriented position while continuing to build my academic foundation</p></div>
             </div>
         </div>
-        <ul class="links">
-          <li><button href="#"><i class="fa fa-facebook" aria-hidden="true"></i></button></li>
-          <li><button href="#"><i class="fa fa-github" aria-hidden="true"></i></button></li>
-          <li><button href="#"><i class="fa fa-instagram" aria-hidden="true"></i></button></li>
-          <li><button href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></button></li>
-        </ul>
     </section>
-    <!-- <hr> -->
+    
+    <hr>
 
 <section id="skills">
     <h1>Skills</h1>
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 skill_cards">
             <div class="skill_card" id="img-1" onmouseover="changeImg('xxx','images/html-color-5.svg');hoin('xx','30%')" onmouseout="replaceImg('xxx','images/html-5.svg');hoout('xx')">
                 <h3>HTML</h3>
                 <img id="xxx" src="images/html-5.svg" alt="html">
-                <div id="xx"></div>
+                <div class="skill_bar" style="width:85%;"></div>
             </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skill_card" onmouseover="changeImg('img-2','images/css-3-color.svg')" onmouseout="replaceImg('img-2','images/css-3.svg')">
                 <h3>CSS</h3>
                 <img id="img-2" src="images/css-3.svg" alt="html">
+                <div class="skill_bar" style="width:70%;"></div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skill_card"  onmouseover="changeImg('img-3','images/atom-color.svg')" onmouseout="replaceImg('img-3','images/atom.svg')">
             <h3>React Js</h3>
             <img id="img-3" src="images/atom.svg" alt="html">
+            <br>
+            <div class="skill_bar" style="width:20%;"></div>
            
         </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skill_card" onmouseover="changeImg('img-4','images/java-script-color.svg')" onmouseout="replaceImg('img-4','images/java-script.svg')">
                 <h3>JS</h3>
                 <img id="img-4" src="images/java-script.svg" alt="html">
+                <br>
+                <div class="skill_bar" style="width:40%;"></div>
                 
             </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skill_card" onmouseover="changeImg('img-5','images/java-color.svg')" onmouseout="replaceImg('img-5','images/java.svg')">
                 <h3>Java</h3>
                 <img id="img-5" src="images/java.svg" alt="html">
+                <div class="skill_bar" style="width:85%;"></div>
                
             </div>
         </div>
@@ -145,6 +129,7 @@
             <div class="skill_card" onmouseover="changeImg('img-6','images/c-color.svg')" onmouseout="replaceImg('img-6','images/c.svg')">
             <h3>C-lang</h3>
             <img id="img-6" src="images/c.svg" alt="html">
+            <div class="skill_bar" style="width:70%;"></div>
           
         </div>
         </div>
@@ -152,46 +137,50 @@
             <div class="skill_card" onmouseover="changeImg('img-7','images/c++-color.svg')" onmouseout="replaceImg('img-7','images/c++.svg')">
             <h3>C++</h3>
             <img id="img-7" src="images/c++.svg" alt="html">
-           
+            <br>
+            <div class="skill_bar" style="width:30%;"></div>
         </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
             <div class="skill_card" onmouseover="changeImg('img-8','images/algorithm-color.svg')" onmouseout="replaceImg('img-8','images/algorithm.svg')">
             <h3>DSA</h3>
             <img id="img-8" src="images/algorithm.svg" alt="html">
-           
+            <div class="skill_bar" style="width:80%;"></div>
         </div>
         </div>
     </div>
 </section>
 
+<hr>
+<!-- 
 <section id="projects">
-    <h1>Projects</h1>
+    <h1>Project</h1>
 </section>
 
-
+<hr>
+ -->
 <section id="testimonials">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner inner">
           <div class="carousel-item active">
           <div class="test">
-              <h1>raghu</h1>
-              <p>X X X X X</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>
+              <h1>Hackerrank</h1>
+              <h4>JAVA</h4>
+              <p>Achievied 5 star Gold badge</p>
           </div>
           </div>
           <div class="carousel-item">
             <div class="test">
-                <h1>raghuram</h1>
-                <p>X X X X X</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>  
+                <h1>Hackerrank</h1>
+                <h4>Problem Solving</h4>
+                <p>Acievied 4 star Silver badge</p>      
             </div>
           </div>
           <div class="carousel-item">
             <div class="test">
-                <h1>raghuramtkr</h1>
-                <p>X X X X X</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum possimus labore magnam. Iste, quis. Molestiae.</p>  
+                <h1>Geeks for Geeks</h1>
+                <p>Earned 2nd place in college</p>
+
             </div>
           </div>
         </div>
@@ -207,6 +196,8 @@
 </section>
 <!-- <h1 id="x" onmouseover="hoin('x')" onmouseout="hoout('x')">raghhu</h1> -->
 
+
+
 <section id="contact">
     <footer>
         <div class="row">
@@ -220,8 +211,8 @@
             <div class="col-lg-8">
                 <button class="btn">Give a review</button>
                 <button class="btn">Contact Me</button>
-                <button class="btn"><i class="fa fa-github" aria-hidden="true"></i> Git Hub</button>
-                <button class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i> Linked In</button>
+                <a href="https://github.com/RaghuRam168"><button class="btn"><i class="fa fa-github" aria-hidden="true"></i> Git Hub</button></a>
+                <a href="https://www.linkedin.com/in/raghu-ram-dhigajarla-4529081a3/"><button class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i> Linked In</button></a>
             </div>
         </div>
     </footer>

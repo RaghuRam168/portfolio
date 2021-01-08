@@ -10,11 +10,12 @@ li{
 
 .navigation{
     background-color: #000;
-    padding: 10px;
+    padding: 5px;
+    text-align: center;
 }
  
 .navigation .nav-item a{
-    color: #ffffff;
+    color: #fff;
     font-size: 1.2rem;
     margin: 0 20px;
 }
@@ -24,6 +25,7 @@ li{
 .navigation .nav-item a:hover
 {
     color: #fdb827;
+    text-decoration: underline;
 }
 
 /* ..................home ......................*/
@@ -43,13 +45,17 @@ li{
 
 #home h1{
     font-family: 'Inria Serif', serif;
-    color: #03506f;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #14274e;
     font-size: 5rem;
 }
 
 #home p{
     font-family: 'Inria Serif', serif;
     color: #00adb5;
+    color: #f6f5f5;
+    color: #f3bad6;
+    color: #9ba4b4;
     font-size: 1.3rem;
 }
 #home img{
@@ -64,20 +70,24 @@ li{
     background-color:#545454;
     background-color: #393e46;
     background-color: #eeeeee;
+    background-color: #f1f6f9;
+    background-color: #fff;
     text-align: center;
     position:relative;
 }
 
 #about h1{
     color: #000;
+    color: #14274e;
     margin: 3% 0%;
     font-family: 'Inria Serif', serif;
     font-size: 3rem;
 }
 
 #about img{
-    height: 150px;
-    width: 150px;
+    /* height: 150px;
+    width: 150px; */
+    width: 60%;
     /* border-radius: 100%; */
     object-fit: cover;
 }
@@ -89,6 +99,8 @@ li{
     color: #ebdab2;
     /* color: #fff; */
     color: #393e46;
+    color: #394867;
+    color: #9ba4b4;
     padding: 5px auto;
     letter-spacing: 1.5px;
     line-height: 1.5rem;
@@ -99,15 +111,16 @@ hr{
     text-align: center;
     width: 40%;
     padding: 2px;
-    margin: 0px auto;
-    border: 1px solid #000;
+    background-color: #bde3fa;
+    margin: 2px auto;
+    border: 1px solid #f1f6f9;
     border-radius: 2px;
 }
 
 .links{
     margin-left:5px;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 0%;
 }
 
@@ -116,16 +129,29 @@ hr{
 }
 
 .links button{
-    /* color: #fdb827;
-    background-color: #393e46; */
     padding:10px;
     border-radius: 4px;
-    /* border: 1px solid #545454; */
 }
+
 .links button:hover{
     transform: scale(1.2);
-    color: #393e46;
-    background-color:#fdb827;
+}
+.face:hover{
+    background-color: #3B5998;
+    color: #fff;
+}
+.git:hover{
+    color: #fff;
+    background-color: #000;
+}
+.insta:hover{
+    color: #fff;
+    background-color: rgb(252, 55, 120);
+}
+.in:hover{
+    color: #fff;
+    background-color: #0077B5;
+
 }
 
 /* ...............skills ..............................*/
@@ -135,6 +161,8 @@ hr{
     padding: 5% 10%;
     background-color: #ffd369;
     background-color: #fdb827;
+    background-color: #fecd1a;
+    background-color: #fff;
 }
 
 #skills h1{
@@ -142,45 +170,62 @@ hr{
     margin-bottom: 3%;
     font-family: 'Inria Serif', serif;
     font-size: 3rem;
+    color: #14274e;
 }
 
 
 #skills img{
-    height: 40%;
-    width: 40%;
+    height: 35%;
+    width: 35%;
+    z-index: 2;
 }
-
+ 
 .skill_card{
+    z-index: 2;
     margin: 20px;
     padding: 20px 10px;
     color: #a6a6a6;
     color: #ebdab2;
     color: #393e46;
+    color: #214252;
+    color: #394867;
+    background-color: #fff;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+    box-shadow:2px 2px 10px 3px #f1f6f9;
 }
+
 .skill_bar{
-    margin:10px 20px;
-    height: 5px;
-    border: 1px solid rgb(255, 0, 13);
-    border-radius: 8px;
-    /* width: 70%; */
-    background-color: #000;
+
+    display: inline-block;
+    margin: 10px auto;
+    padding: 3px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+    transform: translateY(-30px);
 }
 .skill_card:hover{
     object-fit: cover;
     color:#00adb5;
     color: #222831;
-   /*  background-color:  #ffd369;
-    border: 1px solid #f1f1f1; */
     transform: scale(1.1);
+    transition: 500ms;
+    box-shadow:2px 2px 10px 2px #394867;
 }
+
+.skill_card:hover .skill_bar{
+    transition: 100ms;
+    transform: translateY(30px);
+    background-color: #394867;
+} 
+
 
 /* ..............projects .............................*/
 
 #projects{
     height: 50vh;
-    transition-delay: 100ms;
+    transition-delay: 400ms;
     background-color: #eeeeee;
 }
 
@@ -191,6 +236,7 @@ hr{
 #testimonials{
     /* padding: 5% 10%; */
     background-color: #393e46;
+    background-color: #214252;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -203,6 +249,8 @@ hr{
     padding: 4% 10%;
     border-radius: 8px;
     background-color: #fdb827;
+    background-color: #f05454;
+    background-color: #fff;
 }
 
 
@@ -221,15 +269,19 @@ hr{
 }
 .btn{
     color: #fdb827;
+    color: #fff;
     margin: 5px;
     background-color: #393e46;
+    background-color: #214252 ;
     padding: 4%;
     border: 1px solid #545454;
 }
 .btn:hover{
     transform: scale(1.05);
     color: #393e46;
+    color: #214252;
     background-color:#fdb827;
+    background-color: #fff;
 }
 
 
@@ -244,9 +296,11 @@ hr{
     object-fit: cover;
 }
 
+#about img{
+    height: 200px;
+}
+
 .btn{
     padding: 10px;
 }
-
-
   }
